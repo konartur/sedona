@@ -5,6 +5,9 @@
 @mixin margin-right($value: 20px) {
   margin-right: $value;
 }
+@mixin margin-top($value: 60px) {
+  margin-top: $value;
+}
 
 @mixin horizontal-margin($left, $right) {
   @include margin-left($left);

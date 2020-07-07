@@ -1,3 +1,19 @@
+$font-eu: "Euphoria Script", cursive;
+$font-sans: "PT Sans", sans-serif;
+$color-main: #81b3d2;
+$color-ff: #fff;
+
+@mixin title($color, $font, $size, $weight) {
+  text-transform: uppercase;
+  color: $color;
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+}
+@mixin margin-top($value: 60px) {
+  margin-top: $value;
+}
+
 %flex-center {
   display: flex;
   justify-content: center;
@@ -11,6 +27,13 @@
   background-size: cover;
 }
 
-.header__logo {
+.header__logo,
+.header__welcome,
+.motto {
   @extend %flex-center;
+}
+
+.welcome {
+  @include title($color-main, $font-sans, 40px, 700);
+  @include margin-top();
 }
