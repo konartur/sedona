@@ -15,8 +15,3 @@
   height: $heigh;
   width: $width;
 }
-
-@mixin flex-align($justify-content, $align-items) {
-  justify-content: $justify-content;
-  align-items: $align-items;
-}

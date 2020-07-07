@@ -1,0 +1,16 @@
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-image: url("/src/blocks/header/img/bcg-img.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__logo {
+  @extend %flex-center;
+}
