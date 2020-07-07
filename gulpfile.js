@@ -25,11 +25,11 @@ function watch(cb) {
   browserSync.init({
     server: {
       baseDir: ".",
-      index: "/index.html",
+      index: "/header.html",
     },
   });
   gulp.watch("scss/**/*.scss", css);
-  gulp.watch("index.html").on("change", browserSync.reload);
+  gulp.watch("header.html").on("change", browserSync.reload);
   cb();
 }
 

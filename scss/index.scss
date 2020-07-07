@@ -1,3 +1,27 @@
-body {
-  background-color: red;
-}
+// @import "variables";
+// @import "mixins";
+@import "header";
+
+// body {
+//   background-color: $color;
+//   color: $color;
+
+//   div {
+//     $color: red;
+
+//     @include margin-left(20px);
+//     @include margin-left(40%);
+//     @include size(100px, 100px);
+
+//     background-color: $color;
+//   }
+
+//   section {
+//     $color: tomato;
+
+//     @include horizontal-margin(10%, 20px);
+//     @include size(50px, 150px);
+
+//     background-color: $color;
+//   }
+// }

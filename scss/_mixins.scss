@@ -1,0 +1,22 @@
+@mixin margin-left($value) {
+  margin-left: $value;
+}
+
+@mixin margin-right($value: 20px) {
+  margin-right: $value;
+}
+
+@mixin horizontal-margin($left, $right) {
+  @include margin-left($left);
+  @include margin-right($right);
+}
+
+@mixin size($heigh, $width) {
+  height: $heigh;
+  width: $width;
+}
+
+@mixin flex-align($justify-content, $align-items) {
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
