@@ -1,14 +1,41 @@
+@import "variables";
+
 .header {
+  background: url("../images/back-desktop.jpg") 0 0 no-repeat;
+  clip-path: polygon(50% 69%, 100% 60%, 100% 0, 0 0, 0 60%);
+  background-size: contain;
+  height: 840px;
+
   &__logo {
+    @extend %flex-center;
   }
 
   &__welcome {
+    @extend %flex-column;
+
+    margin-top: $martop;
   }
 
   &__title {
+    @extend %flex-center;
+
+    color: $color-2;
+    font-family: $font-t;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: $martops;
   }
 
   &__subtitle {
+    @extend %flex-center;
+
+    color: $color-2;
+    font-family: $font-d;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: $martops;
   }
 
   @media screen and (max-wigth: 992px) {

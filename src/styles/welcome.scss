@@ -1,7 +1,19 @@
+@import "variables";
+
 .welcome {
   &__title {
+    color: $color-1;
+    font-family: $font-t;
+    font-weight: 400;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
   }
 
   &__subtitle {
+    color: $color-3;
+    font-family: $font-d;
+    font-weight: 400;
+    font-size: 40px;
   }
 }

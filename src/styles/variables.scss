@@ -1,2 +1,25 @@
-$color: ;
-$fonts: ;
+$color-1: #81b3d2;
+$color-2: #fff;
+$color-3: #766357;
+
+$font-main: "PT Sans", sans-serif;
+$font-t: "Anton", sans-serif;
+$font-d: "Galada", cursive;
+
+$h-100: 100%;
+
+$martop: 20px;
+$martops: 60px;
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
