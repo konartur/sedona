@@ -2,13 +2,22 @@
 @import "expansion";
 
 .header {
-  background: url("../images/header-background.jpg") 0 0 no-repeat;
-  clip-path: polygon(50% 69%, 100% 60%, 100% 0, 0 0, 0 60%);
-  background-size: contain;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  background: url("../images/header-background.jpg") center bottom no-repeat;
+  background-size: cover;
+  height: 100vh;
 
   &__logo {
     @extend %flex-center;
+  }
+
+  &__wrapper {
+    @extend %flex-column;
+
+    flex-grow: 1;
+    justify-content: flex-start;
   }
 
   &__welcome {
@@ -19,5 +28,9 @@
 
   &__sedona {
     @extend %flex-column;
+
+    display: flex;
+    margin: auto;
+    flex-flow: wrap;
   }
 }

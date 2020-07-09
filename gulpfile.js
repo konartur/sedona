@@ -8,6 +8,9 @@ var cssnano = require("cssnano");
 var postcss = require("gulp-postcss");
 var htmlmin = require("gulp-htmlmin");
 var del = require("del");
+var plumber = require("gulp-plumber");
+var wait = require("gulp-wait");
+
 const imagemin = require("gulp-imagemin");
 
 var dist = "public";
@@ -17,6 +20,8 @@ sass.compiler = require("node-sass");
 gulp.task("styles", function () {
   return gulp
     .src("src/styles/index.scss")
+    .pipe(wait(500))
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(postcss([autoprefixer(), cssnano()]))
