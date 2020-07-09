@@ -1,8 +1,9 @@
 @import "variables";
+@import "expansion";
 
 .welcome {
   &__title {
-    color: $color-1;
+    color: $color-blue;
     font-family: $font-t;
     font-weight: 400;
     font-size: 60px;
@@ -11,7 +12,7 @@
   }
 
   &__subtitle {
-    color: $color-3;
+    color: $color-brown;
     font-family: $font-d;
     font-weight: 400;
     font-size: 40px;

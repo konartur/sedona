@@ -1,10 +1,10 @@
 @import "variables";
 
 .header {
-  background: url("../images/back-desktop.jpg") 0 0 no-repeat;
+  background: url("../images/header-background.jpg") 0 0 no-repeat;
   clip-path: polygon(50% 69%, 100% 60%, 100% 0, 0 0, 0 60%);
   background-size: contain;
-  height: 840px;
+  height: 100%;
 
   &__logo {
     @extend %flex-center;
@@ -19,7 +19,7 @@
   &__title {
     @extend %flex-center;
 
-    color: $color-2;
+    color: $color-white;
     font-family: $font-t;
     font-size: 80px;
     font-weight: 700;
@@ -31,7 +31,7 @@
   &__subtitle {
     @extend %flex-center;
 
-    color: $color-2;
+    color: $color-white;
     font-family: $font-d;
     font-weight: 400;
     font-size: 40px;
