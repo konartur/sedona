@@ -1,4 +1,5 @@
 @import "variables";
+@import "expansion";
 
 .header {
   background: url("../images/header-background.jpg") 0 0 no-repeat;
@@ -16,28 +17,7 @@
     margin-top: $martop;
   }
 
-  &__title {
-    @extend %flex-center;
-
-    color: $color-white;
-    font-family: $font-t;
-    font-size: 80px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-top: $martops;
-  }
-
-  &__subtitle {
-    @extend %flex-center;
-
-    color: $color-white;
-    font-family: $font-d;
-    font-weight: 400;
-    font-size: 40px;
-    margin-top: $martops;
-  }
-
-  @media screen and (max-wigth: 992px) {
+  &__sedona {
+    @extend %flex-column;
   }
 }

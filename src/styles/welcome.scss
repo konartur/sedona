@@ -4,7 +4,7 @@
 .welcome {
   &__title {
     color: $color-blue;
-    font-family: $font-t;
+    font-family: $font-title;
     font-weight: 400;
     font-size: 60px;
     text-transform: uppercase;
@@ -13,7 +13,7 @@
 
   &__subtitle {
     color: $color-brown;
-    font-family: $font-d;
+    font-family: $font-description;
     font-weight: 400;
     font-size: 40px;
   }

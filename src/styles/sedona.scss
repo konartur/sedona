@@ -1,0 +1,28 @@
+@import "variables";
+@import "expansion";
+
+.sedona {
+  &__title {
+    @extend %flex-center;
+
+    color: $color-white;
+    font-family: $font-title;
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: $martops;
+  }
+
+  &__subtitle {
+    @extend %flex-center;
+
+    color: $color-white;
+    font-family: $font-description;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: $martops;
+    text-align: center;
+    max-width: 20%;
+  }
+}
