@@ -1,6 +1,7 @@
 @import "expansion";
 @import "variables";
-@import "advantages";
+@import "media-object";
+@import "item";
 
 .main {
   &__title {
@@ -27,6 +28,19 @@
       font-size: 16px;
       text-transform: uppercase;
       margin-top: 40px;
+    }
+  }
+
+  .list {
+    display: flex;
+
+    &__item {
+      @extend %flex-column;
+
+      flex-grow: 1;
+      justify-content: space-between;
+      line-height: 1.5;
+      margin-top: 60px;
     }
   }
 }
