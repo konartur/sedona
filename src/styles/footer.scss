@@ -1,0 +1,26 @@
+@import "variables";
+@import "expansion";
+
+.footer {
+  &__title {
+    @extend %flex-column;
+    margin: 55px 0;
+  }
+
+  &__title-main {
+    font-family: $font-main;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__title-sup {
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
