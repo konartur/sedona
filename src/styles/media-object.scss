@@ -2,12 +2,9 @@
 @import "expansion";
 
 .media-object {
-  display: flex;
-  margin-top: 60px;
-
   &__description {
     @extend %flex-column;
-    justify-content: space-between;
+
     background-color: $color-blue;
     line-height: 1.5;
 
