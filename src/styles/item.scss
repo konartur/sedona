@@ -8,10 +8,16 @@
     font-size: 21px;
     font-weight: 700;
     text-align: center;
+    text-transform: uppercase;
     margin: 20px 0;
+    max-width: 30%;
+  }
+  &__description-wild {
+    margin-top: 15px;
   }
 
-  &__description {
+  &__description,
+  &__number {
     color: $color-black;
     font-family: $font-main;
     font-size: 14px;
