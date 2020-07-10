@@ -1,12 +1,23 @@
-%flex-center {
+%flex {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
+%flex-center {
+  @extend %flex;
+
+  justify-content: center;
+}
+
 %flex-column {
-  display: flex;
+  @extend %flex;
+
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+}
+
+%flex-around {
+  @extend %flex;
+
+  justify-content: space-around;
 }

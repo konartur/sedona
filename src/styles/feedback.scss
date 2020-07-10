@@ -1,0 +1,23 @@
+@import "variables";
+@import "expansion";
+
+.feedback {
+  &__tag {
+    font-family: $font-main;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__social {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  &__author {
+    @extend %flex;
+
+    text-decoration: none;
+    color: #000;
+  }
+}
