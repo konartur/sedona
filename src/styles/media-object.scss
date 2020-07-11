@@ -73,4 +73,9 @@
       height: 260px;
     }
   }
+
+  .wild__object {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
