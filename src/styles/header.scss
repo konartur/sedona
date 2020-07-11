@@ -23,7 +23,7 @@
   &__welcome {
     @extend %flex-column;
 
-    margin-top: $martop;
+    margin-top: 20px;
   }
 
   &__sedona {
@@ -32,5 +32,10 @@
     display: flex;
     margin: auto;
     flex-flow: wrap;
+  }
+
+  @media screen and (max-width: 576px) {
+    height: 85vh;
+    clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
   }
 }
