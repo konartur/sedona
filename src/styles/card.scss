@@ -1,0 +1,49 @@
+@import "variables";
+@import "expansion";
+
+.card {
+  &__title {
+    color: $color-white;
+    font-family: $font-main;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 35px;
+    max-width: 50%;
+  }
+
+  &__number,
+  &__description {
+    color: $color-white;
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__description {
+    max-width: 70%;
+    padding-bottom: 50px;
+  }
+
+  &__description--width {
+    max-width: 55%;
+  }
+
+  @include media-mobile {
+    &__title {
+      margin-top: 35px;
+      max-width: 100%;
+    }
+
+    &__number {
+      margin-top: 15px;
+    }
+
+    &__description {
+      margin-top: 25px;
+    }
+  }
+}

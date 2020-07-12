@@ -1,23 +1,31 @@
-%flex {
+@import "variables";
+
+@mixin flex {
   display: flex;
   align-items: center;
 }
 
-%flex-center {
-  @extend %flex;
+@mixin flex-center {
+  @include flex;
 
   justify-content: center;
 }
 
-%flex-column {
-  @extend %flex;
+@mixin flex-column {
+  @include flex;
 
   flex-direction: column;
   justify-content: space-between;
 }
 
-%flex-around {
-  @extend %flex;
+@mixin flex-around {
+  @include flex;
 
   justify-content: space-around;
+}
+
+@mixin media-mobile {
+  @media screen and(max-width: $mobile-width) {
+    @content;
+  }
 }

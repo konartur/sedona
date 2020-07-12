@@ -60,32 +60,26 @@
         </div>
 
         <div class="list">
-          <div class="container__mobile">
-            <div class="list__item item">
-              <img class="item__img" src="./images/icon-house.svg" alt="home" />
-              <h3 class="item__title">Жилье</h3>
-              <p class="item__description">
-                Рекомендуем пожить в настоящем мотеле, все как в кино!
-              </p>
-            </div>
-            <div class="list__item item">
-              <img
-                class="item__img"
-                src="./images/icon-burger.svg"
-                alt="food"
-              />
-              <h3 class="item__title">Еда</h3>
-              <p class="item__description">
-                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-              </p>
-            </div>
-            <div class="list__item item">
-              <img class="item__img" src="./images/icon-gift.svg" alt="gift" />
-              <h3 class="item__title">Сувениры</h3>
-              <p class="item__description">
-                Не только китайского но и местного производства!
-              </p>
-            </div>
+          <div class="list__item item item--column">
+            <img class="item__img" src="./images/icon-house.svg" alt="home" />
+            <h3 class="item__title">Жилье</h3>
+            <p class="item__description">
+              Рекомендуем пожить в настоящем мотеле, все как в кино!
+            </p>
+          </div>
+          <div class="list__item item item--column">
+            <img class="item__img" src="./images/icon-burger.svg" alt="food" />
+            <h3 class="item__title">Еда</h3>
+            <p class="item__description">
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            </p>
+          </div>
+          <div class="list__item item item--column">
+            <img class="item__img" src="./images/icon-gift.svg" alt="gift" />
+            <h3 class="item__title">Сувениры</h3>
+            <p class="item__description">
+              Не только китайского но и местного производства!
+            </p>
           </div>
         </div>
 
@@ -97,31 +91,31 @@
           <div class="media-object__description card">
             <h3 class="card__title">Там есть мост дьявола</h3>
             <p class="card__number">&mdash; №2 &mdash;</p>
-            <p class="card__description card__description-width">
+            <p class="card__description card__description--width">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
           </div>
         </div>
 
-        <div class="list list__wild">
-          <div class="list__item item">
+        <div class="list list--grey">
+          <div class="list__item item item--border">
             <h3 class="item__title">Небольшая площадь</h3>
             <p class="item__number">&mdash; №3 &mdash;</p>
-            <p class="item__description item__description-wild">
+            <p class="item__description item__description--margin">
               Все достопримечательности находятся очень близко
             </p>
           </div>
-          <div class="list__item item">
+          <div class="list__item item item--border">
             <h3 class="item__title">Красивая дорога</h3>
             <p class="item__number">&mdash; №4 &mdash;</p>
-            <p class="item__description item__description-wild">
+            <p class="item__description item__description--margin">
               Ехать в седону из Лас-Вегаса совсем не скучно!
             </p>
           </div>
           <div class="list__item item">
             <h3 class="item__title">Мало туристов</h3>
             <p class="item__number">&mdash; №5 &mdash;</p>
-            <p class="item__description item__description-wild">
+            <p class="item__description item__description--margin">
               Большинство едет в гранд каньон и толпится там
             </p>
           </div>
@@ -130,16 +124,18 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__title">
-        <h3 class="footer__title-main">
+      <div class="footer__reserve reserve">
+        <h3 class="reserve__title">
           Заинтересовались?
         </h3>
-        <p class="footer__title-sup">
+        <p class="reserve__title-sup">
           Укажите предпологаемые даты поездки, <br />
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
 
-        <input class="footer__button" type="button" value="Найти Гостиницу" />
+        <button class="reserve__button button" type="button">
+          Найти Гостиницу
+        </button>
       </div>
 
       <div class="footer__map">

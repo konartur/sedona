@@ -3,9 +3,10 @@
 
 .sedona {
   transform: translateY(-50%);
+  justify-content: center;
 
   &__title {
-    @extend %flex-center;
+    @include flex-center;
 
     color: $color-white;
     font-family: $font-title;
@@ -16,7 +17,7 @@
   }
 
   &__subtitle {
-    @extend %flex-center;
+    @include flex-center;
 
     color: $color-white;
     font-family: $font-description;
@@ -27,7 +28,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $mobile-width) {
   .sedona {
     transform: none;
     margin-top: 30px;

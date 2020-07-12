@@ -3,40 +3,10 @@
 
 .media-object {
   &__description {
-    @extend %flex-column;
+    @include flex-column;
 
     background-color: $color-blue;
     line-height: 1.5;
-
-    .card__title {
-      color: $color-white;
-      font-family: $font-main;
-      font-size: 21px;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-align: center;
-      padding-top: 35px;
-      max-width: 50%;
-    }
-
-    .card__number,
-    .card__description {
-      color: $color-white;
-      font-family: $font-main;
-      font-size: 14px;
-      font-weight: 400;
-      text-transform: uppercase;
-      text-align: center;
-    }
-
-    .card__description {
-      max-width: 70%;
-      padding-bottom: 50px;
-    }
-
-    .card__description-width {
-      max-width: 55%;
-    }
   }
 
   &__img img {
@@ -46,27 +16,12 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $mobile-width) {
   .media-object {
     flex-direction: column;
 
     &__description {
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
-
-      .card {
-        &__title {
-          margin-top: 35px;
-          max-width: 100%;
-        }
-
-        &__number {
-          margin-top: 15px;
-        }
-
-        &__description {
-          margin-top: 25px;
-        }
-      }
     }
 
     &__img img {

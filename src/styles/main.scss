@@ -5,7 +5,7 @@
 
 .main {
   &__title {
-    @extend %flex-column;
+    @include flex-column;
 
     width: 50%;
     margin: 0 auto;
@@ -42,23 +42,7 @@
     margin-top: 0;
   }
 
-  .list {
-    display: flex;
-
-    &__item {
-      @extend %flex-column;
-
-      flex-grow: 1;
-      justify-content: space-around;
-      line-height: 1.5;
-      margin: 35px 0 60px 0;
-    }
-  }
-  .list__wild {
-    background-color: #eeeeee;
-  }
-
-  @media screen and (max-width: 576px) {
+  @include media-mobile {
     &__title {
       margin: 50px 0;
       width: 100%;

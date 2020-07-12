@@ -1,0 +1,15 @@
+@import "variables";
+@import "expansion";
+
+.button {
+  background-color: $color-blue;
+  text-transform: uppercase;
+  color: $color-white;
+  border: none;
+  font-family: $font-main;
+  font-size: 21px;
+  font-weight: 700;
+  height: 55px;
+  max-width: 450px;
+  width: 100%;
+}
