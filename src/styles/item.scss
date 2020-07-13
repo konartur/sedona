@@ -8,8 +8,12 @@
 }
 
 .item {
-  display: flex;
-  justify-content: space-around;
+  @include flex-column;
+
+  &__img {
+    width: 75px;
+    height: 72px;
+  }
 
   &__title {
     color: $color-black;
@@ -75,9 +79,6 @@
 
       #{$parent}__title {
         @include item-position($icon-size, $icon-gutter, $icon-gutter);
-
-        margin-top: 0;
-        line-height: $icon-size;
       }
 
       #{$parent}__description {
