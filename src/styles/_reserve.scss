@@ -5,14 +5,12 @@
   @include flex-column;
 
   &__title {
-    font-family: $font-main;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
   }
 
   &__title-sup {
-    font-family: $font-main;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5;

@@ -4,7 +4,7 @@
 .card {
   &__title {
     color: $color-white;
-    font-family: $font-main;
+
     font-size: 21px;
     font-weight: 700;
     text-transform: uppercase;
@@ -16,7 +16,7 @@
   &__number,
   &__description {
     color: $color-white;
-    font-family: $font-main;
+
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
