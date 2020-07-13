@@ -1,6 +1,12 @@
 @import "variables";
 @import "expansion";
 
+$bcg-color-hover: #669ec0;
+$bcg-color-active: #5496bd;
+$bcg-color-disabled: #e5e5e5;
+
+$color-active: #88b6d1;
+
 .button {
   background-color: $color-blue;
   text-transform: uppercase;
@@ -13,17 +19,16 @@
   max-width: 450px;
   outline: none;
   width: 100%;
-}
+  &:hover {
+    background-color: $bcg-color-hover;
+  }
 
-.button:hover {
-  background-color: #669ec0;
-}
+  &:active {
+    background-color: $bcg-color-active;
+    color: #88b6d1;
+  }
 
-.button:active {
-  background-color: #5496bd;
-  color: #88b6d1;
-}
-
-.button:disabled {
-  background-color: #e5e5e5;
+  &:disabled {
+    background-color: $bcg-color-disabled;
+  }
 }
