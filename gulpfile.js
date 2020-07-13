@@ -27,7 +27,6 @@ gulp.task("styles", function () {
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(rename({ suffix: ".min" }))
-    .pipe(ghPages())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(dist))
     .pipe(browserSync.stream());
@@ -52,6 +51,10 @@ gulp.task("html", function () {
     .pipe(gulp.dest(dist));
 });
 
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(ghPages());
+});
+
 gulp.task("clean", function () {
   return del(dist);
 });
@@ -72,4 +75,4 @@ gulp.task(
   gulp.series("clean", gulp.parallel("html", "styles", "img", "font"))
 );
 
-gulp.task("default", gulp.series("build", "watch"));
+gulp.task("default", gulp.series("build", "watch", "deploy"));
