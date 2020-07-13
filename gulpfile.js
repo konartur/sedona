@@ -10,7 +10,7 @@ var htmlmin = require("gulp-htmlmin");
 var del = require("del");
 var plumber = require("gulp-plumber");
 var wait = require("gulp-wait");
-var ghPages = require("gulp-gh-pages");
+var ghpages = require("gh-pages");
 
 const imagemin = require("gulp-imagemin");
 
@@ -51,8 +51,9 @@ gulp.task("html", function () {
     .pipe(gulp.dest(dist));
 });
 
-gulp.task("deploy", function () {
-  return gulp.src("./dist/**/*").pipe(ghPages());
+gulp.task("git-publish", function (cb) {
+  ghpages.publish(dist);
+  cb();
 });
 
 gulp.task("clean", function () {
@@ -75,4 +76,6 @@ gulp.task(
   gulp.series("clean", gulp.parallel("html", "styles", "img", "font"))
 );
 
-gulp.task("default", gulp.series("build", "watch", "deploy"));
+gulp.task("deploy", gulp.series("build", "git-publish"));
+
+gulp.task("default", gulp.series("build", "watch"));

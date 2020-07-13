@@ -33,15 +33,6 @@
     }
   }
 
-  .media-object {
-    display: flex;
-    margin-top: 60px;
-  }
-
-  .wild-object {
-    margin-top: 0;
-  }
-
   @include media-mobile {
     &__title {
       margin: 50px 0;
