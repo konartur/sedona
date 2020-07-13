@@ -9,7 +9,7 @@
     line-height: 1.5;
   }
 
-  &__img img {
+  &__img-size {
     object-fit: fill;
     width: 100%;
     height: 100%;
@@ -24,7 +24,7 @@
       clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0);
     }
 
-    &__img img {
+    &__img-size {
       height: 260px;
     }
   }
