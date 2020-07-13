@@ -10,6 +10,7 @@ var htmlmin = require("gulp-htmlmin");
 var del = require("del");
 var plumber = require("gulp-plumber");
 var wait = require("gulp-wait");
+var ghPages = require("gulp-gh-pages");
 
 const imagemin = require("gulp-imagemin");
 
@@ -26,6 +27,7 @@ gulp.task("styles", function () {
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(rename({ suffix: ".min" }))
+    .pipe(ghPages())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(dist))
     .pipe(browserSync.stream());
