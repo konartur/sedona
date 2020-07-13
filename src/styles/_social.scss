@@ -1,8 +1,0 @@
-@import "variables";
-@import "expansion";
-
-.social {
-  &__item:not(:last-child) {
-    margin-right: 5px;
-  }
-}
