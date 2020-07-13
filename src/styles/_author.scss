@@ -1,0 +1,11 @@
+@import "variables";
+@import "expansion";
+
+.author {
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+}
