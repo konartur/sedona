@@ -1,11 +1,16 @@
 @import "variables";
 
+$fs-title: 60px;
+$fs-sub: 40px;
+$fs-title-mobile: 60px;
+$fs-sub-mobile: 40px;
+
 .welcome {
   &__title {
     color: $color-blue;
     font-family: $font-title;
     font-weight: 400;
-    font-size: 60px;
+    font-size: $fs-title;
     text-transform: uppercase;
     letter-spacing: 5px;
   }
@@ -14,7 +19,7 @@
     color: $color-brown;
     font-family: $font-description;
     font-weight: 400;
-    font-size: 40px;
+    font-size: $fs-sub;
   }
 }
 
@@ -23,12 +28,12 @@
     margin: 25px;
 
     &__title {
-      font-size: 40px;
+      font-size: $fs-title-mobile;
       text-shadow: $color-black 1px 2px 2px;
     }
 
     &__subtitle {
-      font-size: 20px;
+      font-size: $fs-sub-mobile;
 
       margin-top: 10px;
     }
