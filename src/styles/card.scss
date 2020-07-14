@@ -45,4 +45,10 @@
       margin-top: 25px;
     }
   }
+
+  @include media-tablet {
+    &__title {
+      max-width: 100%;
+    }
+  }
 }
