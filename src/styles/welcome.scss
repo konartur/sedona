@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (max-width: $mobile-width) {
+@include media-mobile {
   .welcome {
     margin: 25px;
 

@@ -29,3 +29,9 @@
     @content;
   }
 }
+
+@mixin media-tablet {
+  @media screen and(max-width: $tablet-width) {
+    @content;
+  }
+}
