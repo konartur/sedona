@@ -33,18 +33,17 @@ $fs-sub-mobile: 25px;
   }
 }
 
-@media screen and (max-width: $mobile-width) {
+@include media-mobile {
   .sedona {
     transform: none;
-    margin-top: 30px;
-
+    margin: 0;
     &__title {
       font-size: $fs-title-mobile;
     }
 
     &__subtitle {
       font-size: $fs-sub-mobile;
-      margin-top: 35px;
+      margin-top: 0;
     }
   }
 }

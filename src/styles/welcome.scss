@@ -2,8 +2,8 @@
 
 $fs-title: 60px;
 $fs-sub: 40px;
-$fs-title-mobile: 60px;
-$fs-sub-mobile: 40px;
+$fs-title-mobile: 40px;
+$fs-sub-mobile: 30px;
 
 .welcome {
   &__title {
@@ -34,8 +34,6 @@ $fs-sub-mobile: 40px;
 
     &__subtitle {
       font-size: $fs-sub-mobile;
-
-      margin-top: 10px;
     }
   }
 }
