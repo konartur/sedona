@@ -29,7 +29,6 @@
   &__number {
     color: $color-black;
 
-    font-size: $fs-description;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
@@ -58,7 +57,6 @@
 
     &__description,
     &__numbe {
-      font-size: $fs-description;
     }
 
     &--border {
