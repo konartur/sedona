@@ -11,13 +11,13 @@ $color-active: #88b6d1;
   text-transform: uppercase;
   color: $color-white;
   border: none;
-
   font-size: 21px;
   font-weight: 700;
   height: 55px;
   max-width: 450px;
   outline: none;
   width: 100%;
+
   &:hover {
     background-color: $bcg-color-hover;
   }
