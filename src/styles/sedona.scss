@@ -1,6 +1,11 @@
 @import "variables";
 @import "expansion";
 
+$fs-title: 125px;
+$fs-sub: 40px;
+$fs-title-mobile: 70px;
+$fs-sub-mobile: 25px;
+
 .sedona {
   transform: translateY(-50%);
   justify-content: center;
@@ -10,7 +15,7 @@
 
     color: $color-white;
     font-family: $font-title;
-    font-size: 125px;
+    font-size: $fs-title;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -22,7 +27,7 @@
     color: $color-white;
     font-family: $font-description;
     font-weight: 400;
-    font-size: 40px;
+    font-size: $fs-sub;
     margin-top: 60px;
     text-align: center;
   }
@@ -34,11 +39,11 @@
     margin-top: 30px;
 
     &__title {
-      font-size: 70px;
+      font-size: $fs-title-mobile;
     }
 
     &__subtitle {
-      font-size: 25px;
+      font-size: $fs-sub-mobile;
       margin-top: 35px;
     }
   }
