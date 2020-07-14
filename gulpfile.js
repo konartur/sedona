@@ -67,13 +67,9 @@ gulp.task("img", function () {
     .pipe(gulp.dest(dist + "/images"));
 });
 
-gulp.task("font", function () {
-  return gulp.src("src/fonts").pipe(gulp.dest(dist));
-});
-
 gulp.task(
   "build",
-  gulp.series("clean", gulp.parallel("html", "styles", "img", "font"))
+  gulp.series("clean", gulp.parallel("html", "styles", "img"))
 );
 
 gulp.task("deploy", gulp.series("build", "git-publish"));
