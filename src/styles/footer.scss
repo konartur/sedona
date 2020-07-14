@@ -8,11 +8,11 @@
 
   @include media-mobile {
     &__title-main {
-      font-size: 21px;
+      font-size: $fs-main;
     }
 
     &__title-sup {
-      font-size: 14px;
+      font-size: $fs-description;
     }
   }
 }

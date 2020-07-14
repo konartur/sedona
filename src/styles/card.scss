@@ -4,7 +4,7 @@
   &__title {
     color: $color-white;
 
-    font-size: 21px;
+    font-size: $fs-main;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -16,7 +16,7 @@
   &__description {
     color: $color-white;
 
-    font-size: 14px;
+    font-size: $fs-description;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;

@@ -18,7 +18,7 @@
   &__title {
     color: $color-black;
 
-    font-size: 21px;
+    font-size: $fs-main;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -30,7 +30,7 @@
   &__number {
     color: $color-black;
 
-    font-size: 14px;
+    font-size: $fs-description;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
@@ -54,12 +54,12 @@
     }
 
     &__title {
-      font-size: 21px;
+      font-size: $fs-main;
     }
 
     &__description,
     &__numbe {
-      font-size: 14px;
+      font-size: $fs-description;
     }
 
     &--border {

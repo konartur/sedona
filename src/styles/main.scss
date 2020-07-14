@@ -14,7 +14,7 @@
       color: $color-black;
 
       font-weight: 700;
-      font-size: 20px;
+      font-size: $fs-main;
       text-transform: uppercase;
       text-align: center;
       max-width: 70%;
@@ -45,7 +45,7 @@
       }
 
       .description {
-        font-size: 14px;
+        font-size: $fs-description;
         max-width: 70%;
       }
     }
